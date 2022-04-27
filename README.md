@@ -13,4 +13,10 @@ Project is created with:
 * Selenium 4.0.0
 * Apache POI 5.2.2
 
- 
+## Use
+
+In order to use this program, the following files must be added to the project. Additionaly the paths included in the project have to be customized.
+* selenium-devtools-v99-4.1.3  which may be downloaded here: https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v99/4.1.3/selenium-devtools-v99-4.1.3.jar
+* selenium-server-4.1.3 
+* geckodriver
+
