@@ -20,4 +20,6 @@ In order to use this program, the following files must be added to the project. 
 * selenium-server-4.1.3 
 * geckodriver
 
+Below there is an example of the resulting excel file.
+
 ![Example output](./np.png)
