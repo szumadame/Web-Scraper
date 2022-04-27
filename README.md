@@ -20,3 +20,4 @@ In order to use this program, the following files must be added to the project. 
 * selenium-server-4.1.3 
 * geckodriver
 
+![Example output](./np.jpg)
