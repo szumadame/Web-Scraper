@@ -19,7 +19,9 @@ import java.util.*;
 public class ScrapingTest extends Job {
     //the following list stores Job class objects
     private static List<Job> jobs = new ArrayList<>();
-
+    private static String pathName = "C:\\Users\\adam\\Desktop\\untitled\\geckodriver-v0.30.0-win64\\geckodriver.exe";
+    private static String outputFilePathName = "C:/Users/adam/Desktop/JobOffers.xlsx";
+    
     public ScrapingTest(String name, String company, String location) {
         super(name, company, location);
     }
@@ -79,7 +81,7 @@ public class ScrapingTest extends Job {
             }
         }
         FileOutputStream out = new FileOutputStream(
-                new File("C:/Users/adam/Desktop/JobOffers.xlsx"));
+                new File(outputFilePathName));
 
         workbook.write(out);
         out.close();
@@ -87,7 +89,7 @@ public class ScrapingTest extends Job {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\adam\\Desktop\\untitled\\geckodriver-v0.30.0-win64\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", pathName);
         WebDriver driver = new FirefoxDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
